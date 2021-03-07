@@ -1,0 +1,99 @@
+@import "https://use.fontawesome.com/releases/v5.5.0/css/all.css";
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700;900&display=swap');
+@import url(https://fonts.googleapis.com/css?family=Pacifico);
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: teal;
+}
+.main{
+    position: absolute;
+    border: 10px solid cadetblue;
+    background-image: linear-gradient( 358.7deg,  rgba(42,136,157,1) 1.7%, rgba(122,197,214,1) 51.1%, rgba(211,232,242,1) 95.5% );
+    border-radius: 20px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 50px 100px;
+    text-align: center;
+    font-family: 'Bai Jamjuree', sans-serif;
+}
+.main h2{
+    font-family: inherit;
+    text-transform: capitalize;
+    letter-spacing: .3px;
+    font-weight: bold;
+    font-family: pacifico;
+}
+.main h2 span{
+    font-size: 50px;
+    font-weight: 400;
+}
+.main ul{
+    display: flex;
+    list-style: none;
+    padding: 10px 0;
+}
+.main ul li{
+    text-decoration: none;
+    margin: 0 20px;
+}
+.btn{
+    background: transparent;
+    outline: none;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 16px;
+    box-shadow: rgba(99, 99, 99, 0.8) 0px 2px 8px 0px;
+    transition: .2s;
+    transition-property: transform;
+}
+.btn:hover{
+    transform: scale(1.01);
+}
+.btn{
+    font-family: inherit;
+    text-transform: capitalize;
+    letter-spacing: .3px;
+    font-weight: bold;
+    font-family: pacifico;
+}
+@media only screen and (max-width: 600px){
+    body{
+        background-color: lightseagreen;
+    }
+    .main{
+        border-radius: 10px;
+        padding: 30px 30px;
+    }
+    .main h2 span{
+        font-size: 25px;
+        font-weight: 300;
+    }
+    .main ul{
+        padding: 25px 0 3px 0;
+    }
+    .main ul li{
+        margin: 0 5px;
+        padding: 0 5px;
+    }
+    .btn{
+        padding: 2px 4px;
+        font-size: 14px;
+    }
+    .btn:hover{
+        transform: scale(1.01);
+    }
+    .btn{
+        font-family: inherit;
+        text-transform: capitalize;
+        letter-spacing: .3px;
+        font-weight: bold;
+        font-family: pacifico;
+    }
+}
